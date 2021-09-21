@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Marco</title>
+    <link rel="icon" href="img/favicon.ico" type="imagem/x-icon">
+</head>
+<body>
+    <h1>Multimídia</h1>
+      <p>É uma forma de comunicação que combina diferentes formas de conteúdo,<b> como texto, imagens, áudio, animações ou vídeo em uma única apresentação.</b></p>
+      <p>Para incorporar um arquivo multimídia em um documento HTML utiliza-se a tag &ltiframe&gt, cuja sintaxe está descrita na imagem abaixo:</p>
+      <figure>
+           <img src="img/Tag-iframe.png" width="80%"  height="80%" alt="Tag iframe">
+      </figure>
+
+    <h1>Incorporar outro site</h1>
+       <p>Será incorporado o site do Instituto Federal do Paraná Campus Irati. Segue abaixo um vídeo explicativo.</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/H99c6GxLnNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <p>Segue o site do IFPR Campus Irati anexado na página:</p>
+       <iframe src="https://irati.ifpr.edu.br/" height="60%" width="60%" ></iframe>
+
+    <h1>Incorporar aúdio no site através de arquivos da internet. </h1>
+        <p>Para anexar um áudio, primeiramente acesse um site que lhe forneça a opção de incorporar o arquivo de aúdio ao seu site. Assim, copie o comando que o site disponibilizar e o cole na sua página web. O resultado ficará semelhante ao arquivo abaixo: </p>
+        <iframe width="60%" height="60%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/334671843&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/digitalstreams" title="Westcoast Radio (EDM)" target="_blank" style="color: #cccccc; text-decoration: none;">Westcoast Radio (EDM)</a> · <a href="https://soundcloud.com/digitalstreams/sets/deephousehits" title="Best of Deep House (Vol. 02)" target="_blank" style="color: #cccccc; text-decoration: none;">Best of Deep House (Vol. 02)</a></div>
+    
+  <h1> Incorporar vídeos ao site através do YouTube</h1>
+      <p>As estapas são:</p>
+      <ul>
+        <Li> Clicar em compartilhar, depois de acessar o video a ser incorporado. </L1>
+        <Li> Clicar em incorporar. </L1>
+        <Li> Copiar e colar o código gerado pelo site no seu programa de desenvolvimento de páginas web. </L1>
+    </ul>
+      <p>Segue um vídeo explicativo de como incorporar um vídeo ao seu site: </p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/y8H_CptkAlY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>O resultado está abaixo:</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ebm-fLo9-NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+ <h1> Incorporar vídeos ao site através da máquina local</h1>
+      <p>Segue um video explicativo de como utilizar  tag &ltvideo&gt. A tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outras transmissões de vídeo. A tag contém uma ou mais tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte que ele suporta.</p>
+      <p>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.</p>
+      <p>O comando <b>controls</b> especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução/pausa etc). </p>
+      <p>O comando <b>poster</b> especifica uma imagem a ser mostrada enquanto o vídeo está baixando, ou até que o usuário aperte o botão de reprodução </p>
+      <p>O comando básico para inserir um vídeo está descrito abaixo:</p>
+      <pre>
+          &ltvideo&gt width="320" height="240" poster="img" controls>
+             source src="movie.mp4" type="video/mp4"
+             source src="movie.ogg" type="video/ogg"
+          &lt/video&gt
+     </pre> 
+      
+      <video width="60%" height="60%" poster="video/Imagem estática video.png" controls>
+        <source src="video/incorporar videos do computador.mp4" type="video/mp4">
+     </video>
+     <p>O resultado do video explicativo está abaixo:</p>
+      <video width="60%" height="60%" poster="video/Imagem estática minecraft.png" controls>
+          <source src="video/Minecraft site.mp4" type="video/mp4">
+       </video>
+
+</body>
