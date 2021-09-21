@@ -37,18 +37,18 @@
       <p>O resultado está abaixo:</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ebm-fLo9-NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
- <h1> Incorporar vídeos ao site através da máquina local</h1>
+  <h1> Incorporar vídeos ao site através da máquina local</h1>
       <p>Segue um video explicativo de como utilizar  tag &ltvideo&gt. A tag é usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outras transmissões de vídeo. A tag contém uma ou mais tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte que ele suporta.</p>
       <p>Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.</p>
       <p>O comando <b>controls</b> especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução/pausa etc). </p>
       <p>O comando <b>poster</b> especifica uma imagem a ser mostrada enquanto o vídeo está baixando, ou até que o usuário aperte o botão de reprodução </p>
       <p>O comando básico para inserir um vídeo está descrito abaixo:</p>
-      <pre>
+      <pre><b>
           &ltvideo&gt width="320" height="240" poster="img" controls>
-             source src="movie.mp4" type="video/mp4"
-             source src="movie.ogg" type="video/ogg"
+            &ltsource src="movie.mp4" type="video/mp4"&gt
+            &ltsource src="movie.ogg" type="video/ogg"&gt
           &lt/video&gt
-     </pre> 
+     </pre></b>
       
       <video width="60%" height="60%" poster="video/Imagem estática video.png" controls>
         <source src="video/incorporar videos do computador.mp4" type="video/mp4">
@@ -57,5 +57,47 @@
       <video width="60%" height="60%" poster="video/Imagem estática minecraft.png" controls>
           <source src="video/Minecraft site.mp4" type="video/mp4">
        </video>
+
+  <h1>Incorporar audio ao site armazenados na máquina local máquina local </h1>
+     <p>Para inserir um arquivo de audio utiliza-se a tag <b>&ltaudio&gt</b>. A tag é usada para incorporar conteúdo sonoro em um documento, como música ou outros fluxos de áudio. A tag contém uma ou mais tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte que ele suporta.</p>
+     <p>Existem três formatos de áudio suportados em HTML: MP3, WAV e OGG.</p>
+     <p>O comando <b>controls</b> especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução/pausa etc). </p>
+     <p>O comando <b>preload</b> especifica se e como o autor acha que o áudio deve ser carregado quando a página é carregada </p>
+     <p>O comando <b>src</b> especifica a URL do arquivo de áudio.</p>
+     <p>A seguir está estrutura básica de como se utilizar a tag &ltaudio&gt e um video explicativo: </p>
+     <pre><b>
+        &ltaudio&gt preload="metadata/auto/none" controls>
+           &ltsource src="audio.mp4" type="audio/mp4"&gt
+           &ltsource src="audio.ogg" type="audio/ogg"&gt
+        &lt/audio&gt
+     </pre></b>
+     <video width="60%" height="60%" poster="video/Imagem estática video.png" controls>
+         <source src="video/Incorporar audio armazenados na maquina local.mp4" type="video/mp4">
+     </video>
+     <p>O resultado final ficará semelhante ao arquivo abaixo:</p>
+     <audio preload="metadata" controls>
+       <source src="audio/Marshmello - Alone (Official Music Video).mp3" type="audio/mp3">
+     </audio>
+    
+     <h1>Incorporar imagens com a tag  &ltpicture&gt</h1>
+     <p>A tag dá aos desenvolvedores web mais flexibilidade na especificação de recursos de imagem. O uso mais comum do elemento será para direção de arte em designs responsivos. Em vez de ter uma imagem que é dimensionada para cima ou para baixo com base na largura do viewport, várias imagens podem ser projetadas para preencher melhor a configuração do navegador.</p>
+     <p>O navegador procurará o primeiro elemento  &ltsource&gt onde a consulta de mídia corresponda à largura de viewport atual e, em seguida, exibirá a imagem adequada (especificada no atributo srcset). O elemento &ltimg&gt é necessário como o último filho do elemento, como opção de recuo se nenhuma das tags de origem corresponder.</p>
+     <p>Observação: O elemento funciona "semelhante" a &ltvideo&gt e &ltaudio&gt. Você configura diferentes fontes, e a primeira fonte que se encaixa nas preferências é a que está sendo usada.</p>
+     <p>A seguir está estrutura básica de como se utilizar a tag &ltpicture&gt e um video explicativo: </p>
+    <pre><b>
+         &ltpicture&gt
+            &ltsource media="(max-width:tamanho máximo da tela em pixels)" srcset="img.formato"&gt
+            &ltsource media="(max-width:tamanho máximo da tela em pixels)" srcset="img.formato"&gt
+            &ltimg src="img.formato" alt="descrição"&gt
+         &lt/picture&gt
+    </pre></b>  
+   <picture>
+     <source srcset>
+     <img src="img/imagem site normal.jpg" alt="imagem">
+   </picture>
+
+
+
+
 
 </body>
