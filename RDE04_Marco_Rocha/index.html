@@ -6,36 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-Marco</title>
     <link rel="icon" href="img/favicon.ico" type="imagem/x-icon">
+    <style>
+    body
+    {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color:lightgreen;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h1
+    {
+        color:lightgreen;
+        text-align: center;
+        margin-left: 350px;
+        margin-right: 350px;
+        background-color: green;
+    }
+    h2
+    {
+        color:lightgreen;
+        background-color: green;
+        text-align: left;
 
+    }
+    h3
+    {
+        background-color:lightgreen;
+        color:green;
+        text-align:left;
+    }
+    .dropbtn 
+    {
+        background-color:green;
+       color:lightgreen;
+       padding: 16px;
+       font-size: 16px;
+       border: none;
+       cursor: pointer;
+    }
+
+    .dropdown 
+    {
+       position: relative;
+       display: inline-block;
+    }
+
+    .dropdown-content 
+    {
+       display: none;
+       position: absolute;
+       background-color:green;
+       min-width: 160px;
+       box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+    }
+
+    .dropdown-content a 
+    {
+     color:lightgreen;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+    }
+
+   .dropdown-content a:hover 
+   {
+     background-color:mediumseagreen;
+   }
+
+   .dropdown:hover .dropdown-content 
+   {
+       display: block;
+   }
+
+  .dropdown:hover .dropbtn 
+  {
+     background-color:green;
+  }
+  img 
+  {
+     border-radius: 8px;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 60%;
+     max-width: 100%;
+     height: auto;
+  }
+  iframe
+  {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     border-radius: 8px;
+  }
+  video
+  {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     border-radius: 8px;
+  }
+  audio
+  {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     border-radius: 8px;
+  }
+  pre
+  {
+    text-align:left;
+    font-size: 17px;
+  }
+  div {
+  margin: 0px;
+  border: 1px solid green;
+}
+</style>
 </head>
 <body>
-    <h1>Sumário</h1>
-    <ul>
-        <Li><a href="#Tecnologias">Introdução ao HTML e suas tecnologias.</a></L1>
-        <Li><a href="#servidores">Servidores e profissionais.</a></L1>
-        <Li><a href="#HTML">HTML e tags.</a> </L1>
-        <Li><a href="#imagens">Inserção de imagens.</a></L1>
-        <Li><a href="#listas">Inserção de listas.</a></L1>
-        
-     </ul>
-    <h1><font size ="14"><a name="Tecnologias"></a> Tecnologias</font></h1>
+    <div class="dropdown">
+        <button class="dropbtn">Sumário</button>
+        <div class="dropdown-content">
+        <a href="#Tecnologias">Introdução ao HTML e suas tecnologias.</a>
+        <a href="#servidores">Servidores e profissionais.</a>
+        <a href="#HTML">HTML e tags.</a>
+        <a href="#imagens">Inserção de imagens.</a>
+        <a href="#listas">Inserção de listas.</a>
+       </div>
+     </div>
+    <h1><a name="Tecnologias"></a> Tecnologias</h1>
     <p>As tecnologias utilizadas para o desenvolvimento Web são:</p>
+    <div>
     <ul>
         <Li> <b>HTML 5.0:</b> Uma linguagem de marcação de Hipertexto, responsavel pelo conteúdo do site (texto, tabela e imagem por exemplo). </L1>
         <Li><b>CSS:</b> Responsável pela estilização do conteúdo.</L1>
         <Li><b>Java Script: </b> Reponsável pela interatividade - validação, animação e outras funções. </L1>
     </ul>
+</div>
     <figure>
         <img src="img/Tecnologias.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
     </figure>
     <p><b>Página Web ou Webpage</b> é um arquivo onde você pode inserir textos, imagens, tabelas e incorporar planilhas, apresentações, vídeos com ligações de hipertexto que permitem a navegação de uma página, ou seção na outra.</p>
     <p><b>Websites ou Sites</b> são uma coleção de páginas web armazenadas em uma pasta ou em subpastas relacionadas de um servidor web.</p>
-    <h2><font size ="14"><a name="servidores"></a>Servidor e seus profissionais</font></h2>
+    <h2><a name="servidores"></a>Servidor e seus profissionais</h2>
     <p>Na arquitetura cliente-servidor, o cliente faz uma requisitação ao Server-Side que retorna ao Client-Side a infomação desejada, as tecnologias utilizadas por ambos os servidores estão na imagem abaixo.</p>
     <figure>
         <img src="img/Server e client side.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
     </figure>
     <p>Há diferentes profissionias que trabalham nos diferentes servidores: </p>
+    <div>
     <dl>
         <dt><b>Front-End</b></dt>
         <dd>--> Trabalha no Client-Side.</dd>
@@ -44,7 +168,8 @@
         <dt><b>FullStack</b></dt>
         <dd>--> Atua em ambos os servidores.</dd>
     </dl>
-    <h3><font size ="14"><a name="HTML"></a>HTML </font></h3>
+    </div>
+    <h2><a name="HTML"></a>HTML </h2>
     <p>É uma linguagem de marcação de hipertexto baseda em tags criada na década de 1990 por Tim Bernners-Lee para publicação de conteúdo em hipertexto, texto, imagem, audio e video, que podem ser vinculados através de hyperlinks.</p>
     <p>As <i>Tags</i> definem ao navegador a marcação de conteúdo. As tags tem funcionalidades específicas. Sem o uso de tags o navegador exibe um texto plano.</p>
     <figure>
@@ -67,7 +192,7 @@
         <img src="img/Quebra linha.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
     </figure>
     
-    <h4><font size ="14"><a name="imagens"></a> Imagens </font></h4>
+    <h2><a name="imagens"></a> Imagens</h2>
     <p>Imagem é uma representação visual de uma pessoa, objeto ou paisagem. Imagem digital é uma representação de uma imagem bidimensional usando números binários codificados de modo a permitir seu armazenamento,transferência, impressão e reprodução e seu processamento por mais meios eletrônicos. Formatos de imagem são padrões de codificação, compreensão e definição que determinam o tipo de arquivo gráfico, tais como .BMP, .TIFF, .GIF, .SVG, .ICO, .JPEG (preserva o fundo), .PNG (fundo transparente) dentre outros</p>
     <p>As licenças Creative Commons são várias licenças públicas que permitem a distribuição gratuita de uma obra protegida por direitos autorais.</p>
     <p>As tags de imagens e seus parâmetros definem as imagens e suas propriedades.</p>
@@ -79,35 +204,40 @@
         <img src="img/icon.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
     </figure>
 
-    <h5><font size ="14"><a name="listas"></a> Listas </font></h5>
+    <h2><a name="listas"></a> Listas </h2>
     <p><b>Marcação de listas:</b> As tags de listas definem listas não ordenadas, listas ordenadas e lista detalhada.</p>
     <p>Lista não ordenada:</p>
-    
+<div>    
 <ul>
     <Li> Aluno 1 </L1>
     <Li> Aluno 2 </L1>
     <Li> Aluno 3 </L1>
 </ul>
+</div>
 <figure>
     <img src="img/lista não ordenada.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
 </figure>
 
 <p>Lista ordenada: </p>
+<div>
 <ol> 
     <Li> Marco</L1>
     <Li> Bernardo </L1>
     <Li> João  </L1>
 </ol>
+</div>
 <figure>
     <img src="img/Lista ordenada.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
 </figure>
 <p>Lista detalhada: </p>
+<div>
 <dl>
     <dt><b>Marco</b></dt>
     <dd>--> Estudante de informática no IFPR. </dd>
     <dt><b>João</b></dt>
     <dd>--> Estudante de Agroecologia no IFPR. </dd>
 </dl>
+</div>
 <figure>
     <img src="img/Lista detalhada.jpeg" width="60%"  height="60%" alt="Tecnologias para desenvolvimento Web">
 </figure>

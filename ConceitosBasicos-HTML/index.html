@@ -7,28 +7,143 @@
     <title>HTML-Marco</title>
     <link rel="icon" href="img/favicon.ico" type="imagem/x-icon">
     <style>
-       body
-       { 
-          background-color: darkgrey;
-       }
-    </style>
+      body
+      {
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color:lightgreen;
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+      h1
+      {
+          background-color:green;
+          color:lightgreen;
+          text-align: left;
+      }
+      h2
+      {
+          color:green
+      }
+      h3
+      {
+          background-color:lightgreen;
+          color:green;
+          text-align:left;
+      }
+      .dropbtn 
+      {
+          background-color:green;
+         color:lightgreen;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+      }
 
+      .dropdown 
+      {
+         position: relative;
+         display: inline-block;
+      }
 
+      .dropdown-content 
+      {
+         display: none;
+         position: absolute;
+         background-color:green;
+         min-width: 160px;
+         box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+      }
+
+      .dropdown-content a 
+      {
+       color:lightgreen;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+      }
+
+     .dropdown-content a:hover 
+     {
+       background-color:mediumseagreen;
+     }
+
+     .dropdown:hover .dropdown-content 
+     {
+         display: block;
+     }
+
+    .dropdown:hover .dropbtn 
+    {
+       background-color:green;
+    }
+    img 
+    {
+       border-radius: 8px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 40%;
+       max-width: 100%;
+       height: auto;
+    }
+    iframe
+    {
+      display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+       border-radius: 8px;
+    }
+    video
+    {
+      display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+       border-radius: 8px;
+    }
+    audio
+    {
+      display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+       border-radius: 8px;
+    }
+    pre
+    {
+      text-align:left;
+      font-size: 17px;
+    }
+    ol 
+    {
+       background: green;
+       padding: 4px;
+    }
+    ol li 
+    {
+       background:lightgreen;
+       margin: 4px;
+    }
+  </style>
 </head>
 <body>
-<h1>Sumário</h1>
-    <ul>
-        <Li><a href="#rede">Rede de computadores</a></L1>
-        <Li><a href="#internet">Internet</a></L1>
-        <Li><a href="#avanço">Avanços na década de 1990</a> </L1>
-        <Li><a href="#hipertexto">Hipertexto</a></L1>
-        <Li><a href="#protocolo">Protocolo TCP/IP</a></L1>
-        <Li><a href="#dns">DNS</a></L1>
-        <Li><a href="#prot">Protocolo</a></L1>
-        <Li><a href="#html">HTML</a></L1>
-        <Li><a href="#url">URL</a></L1>
-     </ul>
-
+   <div class="dropdown">
+      <button class="dropbtn">Sumário</button>
+      <div class="dropdown-content">
+         <a href="#rede">Rede de computadores</a></L1>
+         <a href="#internet">Internet</a>
+         <a href="#avanço">Avanços na década de 1990</a>
+         <a href="#hipertexto">Hipertexto</a>
+         <a href="#protocolo">Protocolo TCP/IP</a>
+         <a href="#dns">DNS</a>
+         <a href="#prot">Protocolo</a>
+         <a href="#html">HTML</a>
+         <a href="#url">URL</a>
+     </div>
+   </div>
 <h1><a name="rede"></a>Rede de computadores</h1>
      <p>É um conjunto de dispositivos interconectados a fim de compartilhar dados e recursos, utilizando protocolos para a comunicação.</p>
      <figure>
