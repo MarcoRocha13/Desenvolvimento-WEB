@@ -1,0 +1,109 @@
+
+        body
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darksalmon;
+        }
+        h1#principal
+        {
+            background-color: firebrick;
+            color:darksalmon;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border: 5px solid grey ;
+        }
+        h2
+        {
+            color:firebrick
+        }
+        h3
+        {
+            background-color: firebrick;
+            color:darksalmon;
+            text-align:left;
+        }
+        iframe
+    {
+      display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+       border-radius: 8px;
+    }
+    div.agrupamento
+    {
+        background-color:coral;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 4px solid black;
+        margin-top: 5px;
+        padding: 10px;
+
+    }
+    div#secundario
+    {
+        background-color:tomato;
+        margin:10px;
+    }
+    span
+    {
+        font-weight: bold;
+    }
+    div.personalizado
+    {
+        background-color: tomato;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 5px solid black;
+        margin-top: 4px;
+        padding: 10px;
+
+    }
+    .dropbtn 
+      {
+          background-color:firebrick;
+         color: darksalmon;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+      }
+
+      .dropdown 
+      {
+         position: relative;
+         display: inline-block;
+      }
+
+      .dropdown-content 
+      {
+         display: none;
+         position: absolute;
+         background-color:firebrick;
+         min-width: 160px;
+         box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+      }
+
+      .dropdown-content a 
+      {
+       color:darksalmon;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+      }
+
+     .dropdown-content a:hover 
+     {
+       background-color:indianred;
+     }
+
+     .dropdown:hover .dropdown-content 
+     {
+         display: block;
+     }
+
+    .dropdown:hover .dropbtn 
+    {
+       background-color:firebrick;
+    }
