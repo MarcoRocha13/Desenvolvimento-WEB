@@ -1,0 +1,145 @@
+body
+{
+    background-color:rgba(92, 99, 92, 0.829);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div
+{
+    background-color: lightgreen;
+    margin:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+.hb
+{
+    background-color: lightgreen;
+    margin:10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+}
+.hb>span
+{
+    display: none;
+}
+.hb:hover >span
+{
+    display: block;
+}
+img 
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    max-width: 100%;
+     height: auto;
+}
+h1
+{
+    background-color: green;
+    color: lightgreen;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.tabela01
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-width: 100%;
+     height: auto;
+}
+#pre
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
+#code
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 100%;
+    height: auto;
+}
+#bdo
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-width: 100%;
+    height: auto;
+}
+table, th, td
+ {
+    border: 1px solid black;
+  }
+  
+  table 
+  {
+    width: 100%;
+  }
+  .dropbtn 
+  {
+      background-color:green;
+     color:lightgreen;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+  }
+
+  .dropdown 
+  {
+     position: relative;
+     display: inline-block;
+  }
+
+  .dropdown-content 
+  {
+     display: none;
+     position: absolute;
+     background-color:green;
+     min-width: 160px;
+     box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+  }
+
+  .dropdown-content a 
+  {
+   color:lightgreen;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+  }
+
+ .dropdown-content a:hover 
+ {
+   background-color:mediumseagreen;
+ }
+
+ .dropdown:hover .dropdown-content 
+ {
+     display: block;
+ }
+
+.dropdown:hover .dropbtn 
+{
+   background-color:green;
+}
+

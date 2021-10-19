@@ -6,172 +6,204 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML-Marco</title>
     <link rel="icon" href="img/favicon.ico" type="imagem/x-icon">
+    <link rel="stylesheet" href="RDE08_estilo.css">
 </head>
 <body>
- <h1><center>Súmario</center></h1>
-       <p>Nesse documento será explicado e exemplificado o uso das seguintes <b>Tags</b>: </p>
-       <ul>
-          <Li><a href="#table">Table</a></L1>
-          <Li><a href="#del">Del</a></L1>
-          <Li><a href="#ins">Ins</a></L1>
-          <Li><a href="#sub">Sub</a></L1>
-          <Li><a href="#sup">Sup</a></L1>
-          <Li><a href="#blockquote">Blockquote</a></L1>
-          <Li><a href="#q">Q</a></L1>
-          <Li><a href="#abbr">Abbr</a></L1>
-          <Li><a href="#address">Address</a></L1>
-          <Li><a href="#cite">Cite</a></L1>
-          <Li><a href="#bdo">Bdo</a></L1>
-          <Li><a href="#code">Code</a></L1>
-          <Li><a href="#pre">Pre</a></L1>
-          <Li><a href="#kbd">Kbd</a></L1>
-       </ul>
-
+    <div class="dropdown">
+        <button class="dropbtn">Sumário</button>
+        <div class="dropdown-content">
+        <a href="#table">Table</a>
+        <a href="#del">Del</a>
+        <a href="#ins">Ins</a>
+        <a href="#sub">Sub</a>
+        <a href="#sup">Sup</a>
+        <a href="#blockquote">Blockquote</a>
+        <a href="#q">Q</a>
+        <a href="#abbr">Abbr</a>
+        <a href="#address">Address</a>
+        <a href="#cite">Cite</a>
+        <a href="#bdo">Bdo</a>
+        <a href="#code">Code</a>
+        <a href="#pre">Pre</a>
+        <a href="#kbd">Kbd</a>
+       
+       </div>
+     </div>
    
- <h1><a name="table"></a>Tag &lttable&gt</h1>
-       <p>A tag define uma tabela HTML.</p>
-       <p>Uma tabela HTML consiste em um elemento e um ou mais &lttr&gt, &ltth&gt e &lttd&gt elementos. O elemento &lttr&gt define uma linha de tabela, o elemento &ltth&gt define um cabeçalho da tabela e o elemento &lttd&gt define uma célula da tabela. A tag &lttable&gt aceita tanto atributos globais quanto atributos de evento. </p>
-       <p>Uma tabela HTML também pode incluir &ltcaption&gt,  &ltcolgroup&gt,  &ltthead&gt,  &lttfood&gt  e  &lttbody&gt elementos.</p>
-       <p>A seguir está um exemplo de tabela e em seguência a estrutura básica sem uso de CSS.</p>
-       <table border="5" cellspacing="25" cellpadding="0">
-          <tr>
-             <th>Nome</th>
-             <th>Email</th>
-              <th>Telefone</th>
-          </tr>
-          <tr>
-             <td>Marco</td>
-             <td>marco@gmail.com</td>
-            <td>99806-4749</td>
-           </tr>
-        </table>
-        <figure>
-            <img src="img/Tag_tabela.png" width="30%"  height="30%" alt="Tag table">
+ <div class="hb">
+     <h1><a name="table"></a>Tag &lttable&gt</h1>
+           <p>A tag define uma tabela HTML.</p>
+           <p>Uma tabela HTML consiste em um elemento e um ou mais &lttr&gt, &ltth&gt e &lttd&gt elementos. O elemento &lttr&gt define uma linha de tabela, o elemento &ltth&gt define um cabeçalho da tabela e o elemento &lttd&gt define uma célula da tabela. A tag &lttable&gt aceita tanto atributos globais quanto atributos de evento. </p>
+           <p>Uma tabela HTML também pode incluir &ltcaption&gt,  &ltcolgroup&gt,  &ltthead&gt,  &lttfood&gt  e  &lttbody&gt elementos.</p>
+           <p>A seguir está um exemplo de tabela e em seguência a estrutura básica sem uso de CSS.</p>
+           <table >
+              <tr>
+                 <th>Nome</th>
+                 <th>Email</th>
+                  <th>Telefone</th>
+              </tr>
+              <tr>
+                 <td>Marco</td>
+                 <td>marco@gmail.com</td>
+                <td>99806-4749</td>
+               </tr>
+            </table>
+            <span >
+                <figure>
+                    <img class="tabela01" src="img/Tag_tabela.png" width="30%"  height="30%" alt="Tag table">
+                </figure>
+                <p>Para gerar o design em HTML na tabela, insira os comandos presentes na imagem abaixo:</p>
+                <figure>
+                    <img class="tabela01" src="img/Tabela completa.png" width="30%"  height="30%" alt="Tag table">
+                </figure>
+                <p>O comando <b>border</b> define a espessura em pixels da borda da tabela. O comando <b>cellspacing</b> define o espaçamento entra as células da tabela. O comando <b>cellpadding</b> define o espaçamento dentro da célula da tabela.</p>
+                <p>Tabela com o comando <b>cellspacing</b> em 25. </p>
+                <figure>
+                    <img class="tabela01" src="img/cellspacing.png" width="30%"  height="30%" alt="Tag table">
+                </figure>
+                <p>Tabela com o comando <b>cellpadding</b> em 25. </p>
+                <figure>
+                    <img class="tabela01" src="img/cellpading.png" width="30%"  height="30%" alt="Tag table">
+                </figure>
+            </span>
+ </div>
+
+ <div>
+     <h1><a name="del"></a>Tag &ltdel&gt</h1>
+          <p>A tag define texto que foi excluído de um documento. Os navegadores geralmente destacam uma linha através de texto suprimido.</p>
+          <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltdel&gt. </p>
+          <p>Exemplo: <b>Eu gosto muito de <del>gato</del> <ins>cachorro</ins>.</b></p>
+          <figure>
+              <img src="img/Tag_del.png" width="60%"  height="60%" alt="Tag del">
         </figure>
-        <p>Para gerar o design em HTML na tabela, insira os comandos presentes na imagem abaixo:</p>
-        <figure>
-            <img src="img/Tabela completa.png" width="30%"  height="30%" alt="Tag table">
-        </figure>
-        <p>O comando <b>border</b> define a espessura em pixels da borda da tabela. O comando <b>cellspacing</b> define o espaçamento entra as células da tabela. O comando <b>cellpadding</b> define o espaçamento dentro da célula da tabela.</p>
-        <p>Tabela com o comando <b>cellspacing</b> em 25. </p>
-        <figure>
-            <img src="img/cellspacing.png" width="30%"  height="30%" alt="Tag table">
-        </figure>
-        <p>Tabela com o comando <b>cellpadding</b> em 25. </p>
-        <figure>
-            <img src="img/cellpading.png" width="30%"  height="30%" alt="Tag table">
-        </figure>
+ </div>
 
- <h1><a name="del"></a>Tag &ltdel&gt</h1>
-      <p>A tag define texto que foi excluído de um documento. Os navegadores geralmente destacam uma linha através de texto suprimido.</p>
-      <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltdel&gt. </p>
-      <p>Exemplo: <b>Eu gosto muito de <del>gato</del> <ins>cachorro</ins>.</b></p>
-      <figure>
-          <img src="img/Tag_del.png" width="60%"  height="60%" alt="Tag del">
-    </figure>
+ <div>
+     <h1><a name="ins"></a>Tag &ltins&gt</h1>
+         <p>A tag define um texto que foi inserido em um documento. Os navegadores geralmente sublinham o texto inserido.</p>
+         <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltins&gt. </p>
+         <p>Exemplo: <b>Eu gosto muito de <del>gato</del> <ins>cachorro</ins>>.</b></p>
+          <figure>
+              <img src="img/Tag_del.png" width="60%"  height="60%" alt="Tag ins">
+          </figure>
+ </div>
 
- <h1><a name="ins"></a>Tag &ltins&gt</h1>
-     <p>A tag define um texto que foi inserido em um documento. Os navegadores geralmente sublinham o texto inserido.</p>
-     <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltins&gt. </p>
-     <p>Exemplo: <b>Eu gosto muito de <del>gato</del> <ins>cachorro</ins>>.</b></p>
-      <figure>
-          <img src="img/Tag_del.png" width="60%"  height="60%" alt="Tag ins">
-      </figure>
+ <div>
+     <h1><a name="sub"></a>Tag &ltsub&gt</h1>
+          <p>A tag define texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. Texto subscrito pode ser usado para fórmulas químicas.</p>
+          <p>Exemplo:<b>H<sub>2</sub>O</b></p>
+          <figure>
+            <img src="img/Tag_sub.png" width="60%"  height="60%" alt="Tag sub">
+           </figure>
+ </div>
 
- <h1><a name="sub"></a>Tag &ltsub&gt</h1>
-      <p>A tag define texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e, às vezes, é renderizado em uma fonte menor. Texto subscrito pode ser usado para fórmulas químicas.</p>
-      <p>Exemplo:<b>H<sub>2</sub>O</b></p>
-      <figure>
-        <img src="img/Tag_sub.png" width="60%"  height="60%" alt="Tag sub">
-       </figure>
+ <div>
+     <h1><a name="sup"></a>Tag &ltsup&gt</h1>
+         <p>A tag define texto de sobrescrito. O texto de sobrescrito aparece meio caractere acima da linha normal, e às vezes é renderizado em uma fonte menor. O texto do superscript pode ser usado para notas de rodapé.</p>
+         <p>Exemplo:<b>WWW<sup>[1]</sup></b></p>
+            <figure>
+             <img src="img/Tag_sup.png" width="60%"  height="60%" alt="Tag sup">
+            </figure>
+ </div>
 
- <h1><a name="sup"></a>Tag &ltsup&gt</h1>
-     <p>A tag define texto de sobrescrito. O texto de sobrescrito aparece meio caractere acima da linha normal, e às vezes é renderizado em uma fonte menor. O texto do superscript pode ser usado para notas de rodapé.</p>
-     <p>Exemplo:<b>WWW<sup>[1]</sup></b></p>
-        <figure>
-         <img src="img/Tag_sup.png" width="60%"  height="60%" alt="Tag sup">
-        </figure>
+ <div>
+     <h1><a name="blockquote"></a>Tag &ltblockquote&gt</h1>
+          <p>A tag especifica uma seção que é citada de outra fonte.</p>
+          <p>Exemplo:</p>
+          <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><b>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</b></blockquote>
+          <p>Imagem de como se usar essa tag: </p>
+          <figure>
+              <img src="img/Tag_block.png" width="70%"  height="70%" alt="Tag blockquote">
+           </figure>
+ </div>
 
- <h1><a name="blockquote"></a>Tag &ltblockquote&gt</h1>
-      <p>A tag especifica uma seção que é citada de outra fonte.</p>
-      <p>Exemplo:</p> 
-      <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><b>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</b></blockquote>
-      <p>Imagem de como se usar essa tag: </p>
-      <figure>
-          <img src="img/Tag_block.png" width="70%"  height="70%" alt="Tag blockquote">
-       </figure>
+ <div>
+     <h1><a name="q"></a>Tag &ltq&gt</h1>
+          <p>A tag define uma citação curta. Os navegadores normalmente inserem aspas em torno da cotação. </p>
+           <p>Exemplo: Os representantes da ONU afirmam: <q>Nos próximos anos o planeta enfrentará uma grave crise climática, caso mudanças não sejam tomadas.</q></p>
+           <p>Imagem de como se usar essa tag: </p>
+          <figure>
+             <img src="img/Tag_q.png" width="60%"  height="60%" alt="Tag q">
+          </figure>
+ </div>
 
- <h1><a name="q"></a>Tag &ltq&gt</h1>
-      <p>A tag define uma citação curta. Os navegadores normalmente inserem aspas em torno da cotação. </p>
-       <p>Exemplo: Os representantes da ONU afirmam: <q>Nos próximos anos o planeta enfrentará uma grave crise climática, caso mudanças não sejam tomadas.</q></p>
-       <p>Imagem de como se usar essa tag: </p>
-      <figure>
-         <img src="img/Tag_q.png" width="60%"  height="60%" alt="Tag q">
-      </figure>
+ <div>
+     <h1><a name="abbr"></a>Tag &ltabbr&gt</h1>
+         <p>A tag define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+         <p>Exemplo: <b><abbr title= "Instituto Brasileiro de Geografia e Estatística">IBGE.</abbr></b></p>
+         <p>Estrutura para se usar essa tag: </p>
+         <figure>
+            <img src="img/Tag_abbr.png" width="70%"  height="70%" alt="Tag abbr">
+         </figure>
+ </div>
 
- <h1><a name="abbr"></a>Tag &ltabbr&gt</h1>
-     <p>A tag define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
-     <p>Exemplo: <b><abbr title= "Instituto Brasileiro de Geografia e Estatística">IBGE.</abbr></b></p>
-     <p>Estrutura para se usar essa tag: </p>
-     <figure>
-        <img src="img/Tag_abbr.png" width="70%"  height="70%" alt="Tag abbr">
-     </figure>
-
- <h1><a name="address"></a>Tag &ltaddress&gt</h1>
-     <p>A tag define as informações de contato para o autor/proprietário de um documento ou um artigo. As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone, alça de mídia social, etc. O texto no elemento geralmente é renderizado em itálico, e os navegadores sempre adicionarão uma quebra de linha antes e depois do elemento.</p>
-     <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltaddress&gt.</p>
-     <address>
-          Escrito por <a href="mailto:marco.rochaIFPR@gmail.com">Marco Rocha</a>.<br>
-          Endereço: Travessa São Judas Tadeu, n° 102, bairro São João.<br>
-          Telefone: (42) 99806-4749
-     </address> 
-     <figure>
-        <img src="img/Tag_address.png" width="60%"  height="60%" alt="Tag address">
-     </figure>
+ <div>
+     <h1><a name="address"></a>Tag &ltaddress&gt</h1>
+         <p>A tag define as informações de contato para o autor/proprietário de um documento ou um artigo. As informações de contato podem ser um endereço de e-mail, URL, endereço físico, número de telefone, alça de mídia social, etc. O texto no elemento geralmente é renderizado em itálico, e os navegadores sempre adicionarão uma quebra de linha antes e depois do elemento.</p>
+         <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltaddress&gt.</p>
+         <address>
+              Escrito por <a href="mailto:marco.rochaIFPR@gmail.com">Marco Rocha</a>.<br>
+              Endereço: Travessa São Judas Tadeu, n° 102, bairro São João.<br>
+              Telefone: (42) 99806-4749
+         </address>
+         <figure>
+            <img src="img/Tag_address.png" width="60%"  height="60%" alt="Tag address">
+         </figure>
+ </div>
     
- <h1><a name="cite"></a>Tag &ltcite&gt</h1>
-      <p>A tag define o título de uma obra criativa (por exemplo, um livro, um poema, uma canção, um filme, uma pintura, uma escultura, etc.).</p>
-      <p>Exemplo:<cite>The Scream</cite>, obra de Edward Munch, pintadade em 1893. </p>
-      <p>Estrutura para se usar essa tag: </p>
-      <figure>
-        <img src="img/Tag_cite.png" width="60%"  height="60%" alt="Tag cite">
-     </figure>
+ <div>
+     <h1><a name="cite"></a>Tag &ltcite&gt</h1>
+          <p>A tag define o título de uma obra criativa (por exemplo, um livro, um poema, uma canção, um filme, uma pintura, uma escultura, etc.).</p>
+          <p>Exemplo:<cite>The Scream</cite>, obra de Edward Munch, pintadade em 1893. </p>
+          <p>Estrutura para se usar essa tag: </p>
+          <figure>
+            <img src="img/Tag_cite.png" width="60%"  height="60%" alt="Tag cite">
+         </figure>
+ </div>
 
- <h1><a name="bdo"></a>Tag &ltbdo&gt</h1>
-      <p>BDO significa Substituição Bidirecional. A tag é usada para substituir a direção do texto atual. </p>
-      <p>Exemplo: <bdo dir="rtl">Olá, meu nome é Marco Rocha</bdo> </p>
-      <p>Estrutura para se usar essa tag: </p>
-      <figure>
-        <img src="img/Tag_bdo.png" width="40%"  height="40%" alt="Tag bdo">
-      </figure>
+ <div>
+     <h1><a name="bdo"></a>Tag &ltbdo&gt</h1>
+          <p>BDO significa Substituição Bidirecional. A tag é usada para substituir a direção do texto atual. </p>
+          <p>Exemplo: <bdo dir="rtl">Olá, meu nome é Marco Rocha</bdo> </p>
+          <p>Estrutura para se usar essa tag: </p>
+          <figure>
+            <img id="bdo" src="img/Tag_bdo.png" width="40%"  height="40%" alt="Tag bdo">
+          </figure>
+ </div>
 
- <h1><a name="code"></a>Tag &ltcode&gt</h1>
-     <p>A tag é usada para definir um pedaço de código de computador. O conteúdo interno é exibido na fonte monoespacial padrão do navegador. </p>
-     <p>Exemplo: <b>A Tag <code>code</code> pode ser usada para exibir códigos.</b></p>
-     <p>Estrutura para se usar essa tag: </p>
-     <figure>
-        <img src="img/Tag_code.png" width="70%"  height="70%" alt="Tag code">
-     </figure>
+ <div>
+     <h1><a name="code"></a>Tag &ltcode&gt</h1>
+         <p>A tag é usada para definir um pedaço de código de computador. O conteúdo interno é exibido na fonte monoespacial padrão do navegador. </p>
+         <p>Exemplo: <b>A Tag <code>code</code> pode ser usada para exibir códigos.</b></p>
+         <p>Estrutura para se usar essa tag: </p>
+         <figure>
+            <img id="code" src="img/Tag_code.png" width="70%"  height="70%" alt="Tag code">
+         </figure>
+ </div>
 
- <h1><a name="pre"></a>Tag &ltpre&gt</h1> 
-     <p>A tag define texto pré-formado. O texto em um elemento é exibido em uma fonte de largura fixa, e o texto preserva espaços e quebras de linha. O texto será exibido exatamente como escrito no código-fonte HTML.</p>
-     <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltpre&gt.</p>
-     <pre>
-         <b>
-         O texto é exibido
-         da maneira como é
-         escrito no Visual Studio Code.</b>
-     </pre>
-     <figure>
-        <img src="img/Tag_pre.png" width="25%"  height="25%" alt="Tag pre">
-     </figure>
+ <div>
+     <h1><a name="pre"></a>Tag &ltpre&gt</h1>
+         <p>A tag define texto pré-formado. O texto em um elemento é exibido em uma fonte de largura fixa, e o texto preserva espaços e quebras de linha. O texto será exibido exatamente como escrito no código-fonte HTML.</p>
+         <p>A seguir está um exemplo e uma imagem de como se estrutura uma informação com a tag &ltpre&gt.</p>
+         <pre>
+             <b>
+             O texto é exibido
+             da maneira como é
+             escrito no Visual Studio Code.</b>
+         </pre>
+         <figure>
+            <img id="pre" src="img/Tag_pre.png" width="25%"  height="25%" alt="Tag pre">
+         </figure>
+ </div>
 
- <h1><a name="kbd"></a>Tag &ltkbd&gt</h1>  
-      <p>A tag é usada para definir a entrada do teclado. O conteúdo interno é exibido na fonte monoespacial padrão do navegador.</p>
-      <p>Exemplo: <b>Precione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar texto. </b> </p>
-      <p>Estrutura para se usar essa tag: </p>
-      <figure>
-        <img src="img/Tag_kbd.png" width="60%"  height="60%" alt="Tag kbd">
-     </figure>
+ <div>
+     <h1><a name="kbd"></a>Tag &ltkbd&gt</h1>
+          <p>A tag é usada para definir a entrada do teclado. O conteúdo interno é exibido na fonte monoespacial padrão do navegador.</p>
+          <p>Exemplo: <b>Precione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar texto. </b> </p>
+          <p>Estrutura para se usar essa tag: </p>
+          <figure>
+            <img src="img/Tag_kbd.png" width="60%"  height="60%" alt="Tag kbd">
+         </figure>
+ </div>
 </body>
 </html>
