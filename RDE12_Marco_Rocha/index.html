@@ -11,46 +11,65 @@
 
 <body>
  
-  <h1>Box Model</h1>
- 
-  <p>O modelo das caixas em CSS, descreve os boxes geradas pelos elementos HTML  detalhando as opções de ajuste de margens, bordas, padding e conteúdo para cada elemento.
-  Entender o Box Model é fundamental para construção de layout em sites.</p>
-  
-    <h2>Block Level</h2>
-    <p>Elementos HTML (Linguagem de marcação de hipertexto) historicamente foram categorizados como “nível de bloco” ou elementos “em linha”. Um elemento em nível de bloco ocupa todo o espaço de seu elemento pai (container), criando assim um “bloco”.Exemplos de elementos block-level, que ocupam a linha de conteúdo inteira.</p>
-
-    <p class="block">Marco Aurélio da Rocha</p>
-    <p class="block"> O modelo das caixas em CSS</p>
+  <div>
+    <h1>Box Model</h1>
+    <p>O modelo das caixas em CSS, descreve os boxes geradas pelos elementos HTML  detalhando as opções de ajuste de margens, bordas, padding e conteúdo para cada elemento. Entender o Box Model é fundamental para construção de layout em sites.</p>
+    <p>Os principais comandos estão descritos na lista abaixo</p>
+    <ul>
+      <li>A propriedade CSS <b>width</b> determina a largura da área de conteúdo de um elemento. A área de conteúdo fica dentro do preenchimento, da borda, e da margem de um elemento. As propriedades <b>min-width</b> e <b>max-width</b> sobrescrevem o width.</li>
     
-    <h2 class="block">Inline Level</h2>
-    <p>"Inline" é uma categorização dos elementos do HTML, em contraste com os "elementos de bloco". Os elementos inline podem ser exibidos em nível de bloco ou outros elementos inline. Eles ocupam somente a largura de seu conteúdo.Exemplos de elementos inline-level, não ocupam a linha de conteúdo inteira.</p>
-
-    <p class="inline">Marco Aurélio da Rocha</p>
-    <p class="inline"> O modelo das caixas em CSS</p>
-     
-     <h2> Inline-block</h2>
-     <p>A CSS pode alterar o tipo do elemento, com a propriedade display, com os valores: block, inline</p>
+      <li>Na prática usam-se as propriedades <b>min-height </b>e <b>max-height</b> em conjunto com a propriedade height com a finalidade de estabelecer valores mínimo e máximo para uma altura definida em porcentagem.</li>
+      <li>Border é uma propriedade que adiciona um contorno em volta de um elemento HTML. Ela pode ser aplicada em todos os lados de um elemento da página e ter características diferentes, como tamanhos (border-width), cores (border-color) e estilos (border-style).</li>
+      <li>A propriedade<b> padding </b>define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente <b>( padding-top , padding-right , padding-bottom , padding-left )</b>.</li>
+      <li>A propriedade CSS  <b>display</b> especifica o tipo de caixa de renderização usada por um elemento. No HTML, os valores padrões da propriedade  display são feitas a partir do comportamento descrito nas especificações HTML ou da folha de estilo padrão do navegador/usuário. O valor padrão em XML é inline.</li>
+      <li>No CSS, o <b>position</b> é uma propriedade utilizada para determinar o posicionamento dos elementos na página. Ela é usada em conjunto com propriedades auxiliares, entre elas: <b>bottom, top, left e right</b>, que ajudam a definir de que forma o elemento será posicionado na tela.</li>
+      <li><b>justify-content: flex-end -></b> Alinha os itens ao final do container. <b>justify-content: center -></b> Alinha os itens ao centro do container. <b>justify-content: space-between -> </b>Cria um espaçamento igual entre os elementos. Mantendo o primeiro grudado no início e o último no final.</li>
+      <li>A propriedade CSS <b>align-items</b> estabelece o valor align-self em todos filhos diretos como um grupo. A propriedade align-self estabelece o alinhamento de um certo item dentro do bloco que o contém.</li>
+      <li>A propriedade <b>Z-index</b> especifica a ordem da pilha de um elemento do anúncio. Um elemento com número de ordem de empilhamento superior será exibido à frente de outro com número inferior.</li>
+    </ul>
     
-     <h2>Posicionamento</h2>
-     <div class="box1">Estático - permanece na posição em que foi definido</div>
-     <div class="box2">Relativo - posicionado em relação onde foi definido </div>
-     <div class="box3">Absoluto - pode ser posicionado em qualquer lugar do documento</div>
-     <div class="box4">Fixed - permanece fixo durante a rolagem do conteúdo </div>
-     <div class="box5">Sticky - permanece fixo durante a rolagem a partir de onde foi definido </div>
-     <h2>Layers</h2>
-     <div class="layer1">Camada 1 </div>
-     <div class="layer2">Camada 2 </div>
-     <h2>Float</h2>
-     <p>A float propriedade é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p>
+      <h2>Block Level</h2>
+      <p>Elementos HTML (Linguagem de marcação de hipertexto) historicamente foram categorizados como “nível de bloco” ou elementos “em linha”. Um elemento em nível de bloco ocupa todo o espaço de seu elemento pai (container), criando assim um “bloco”.Exemplos de elementos block-level, que ocupam a linha de conteúdo inteira.</p>
+      <p class="block">Marco Aurélio da Rocha</p>
+      <p class="block"> O modelo das caixas em CSS</p>
+    
+      <h2 class="block">Inline Level</h2>
+      <p>"Inline" é uma categorização dos elementos do HTML, em contraste com os "elementos de bloco". Os elementos inline podem ser exibidos em nível de bloco ou outros elementos inline. Eles ocupam somente a largura de seu conteúdo.Exemplos de elementos inline-level, não ocupam a linha de conteúdo inteira.</p>
+      <p class="inline">Marco Aurélio da Rocha</p>
+      <p class="inline"> O modelo das caixas em CSS</p>
+    
+       <h2> Inline-block</h2>
+       <p>A CSS pode alterar o tipo do elemento, com a propriedade display, com os valores: block, inline</p>
+  </div>
+    
+     <div>
+       <h1>Posicionamento - comando position</h1>
+       <ul>
+         <li>Estático - permanece na posição em que foi definido</li>
+         <li>Relativo - posicionado em relação onde foi definido</li>
+         <li>Absoluto - pode ser posicionado em qualquer lugar do documento.</li>
+         <li>Fixed - permanece fixo durante a rolagem do conteúdo</li>
+         <li>Sticky - permanece fixo durante a rolagem a partir de onde foi definido.</li>
+       </ul>
+       <h2>Layers</h2>
+       <div class="layer1">Camada 1 </div>
+       <div class="layer2">Camada 2 </div>
+       <p>Nesse caso foi utiliado o comando <b>Z-index</b> para a realizar a sobreposição de boxes.</p>
+     </div>
 
-<p>A floatpropriedade pode ter um dos seguintes valores:</p>
-
-<ul>
-  <li>left - O elemento flutua à esquerda de seu contêiner</li>
-  <li>right - O elemento flutua à direita de seu contêiner</li>
-  <li>none- O elemento não flutua (será exibido apenas onde ocorre no texto).</li>
-  <li>inherit - O elemento herda o valor flutuante de seu pai</li>
-</ul>
-<p>Em seu uso mais simples, a floatpropriedade pode ser usada para envolver o texto em imagens.</p>
+     <div>
+       <h1>Float</h1>
+       <p>A float propriedade é usada para posicionar e formatar o conteúdo, por exemplo, deixar uma imagem flutuar à esquerda do texto em um contêiner.</p>
+       
+       <p>A floatpropriedade pode ter um dos seguintes valores:</p>
+       
+       <ul>
+         <li>left - O elemento flutua à esquerda de seu contêiner</li>
+         <li>right - O elemento flutua à direita de seu contêiner</li>
+         <li>none- O elemento não flutua (será exibido apenas onde ocorre no texto).</li>
+         <li>inherit - O elemento herda o valor flutuante de seu pai</li>
+       </ul>
+       <p>Em seu uso mais simples, a floatpropriedade pode ser usada para envolver o texto em imagens.</p>
+     </div>
 </body>
 </html>
