@@ -44,10 +44,7 @@ header
     margin:15px 2px 25px 2px;
     background-color: gainsboro;
     text-align: justify;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px #08101a98;
 }
@@ -74,7 +71,29 @@ header
         padding: 0;
     }
 }
-img{display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;}
+.button {
+    background-color:darkred; 
+    border:inset;
+    color: white;
+   cursor:pointer;
+    padding: 8px 20px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+         width: 10%;
+         max-width: 100%;
+         height: auto;
+    
+  }
+  .button:hover {background-color:lightcoral}
+  
+  .button:active {
+    background-color:lightcoral;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
