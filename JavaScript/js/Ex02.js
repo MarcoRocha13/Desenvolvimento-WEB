@@ -12,7 +12,7 @@ function transformar02()
     var n1,d
     n1=parseFloat(document.getElementById("n1").value)
     d=n1/5.25
-     document.getElementById("dolar").innerHTML=`O valor convertido de real para dolar é $ ${d}`
+    document.getElementById("dolar").innerHTML=`O valor convertido de real para dolar é $ ${d}`
 
 
 }
